@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Countdown from './Countdown';
 
+// Stop peeking >:(
 ReactDOM.render(
 	<Countdown />,
 	document.getElementById('root')
