@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import Countdown from './Countdown';
+import Countdown, { startTime } from './Countdown';
+import App from './App';
+
+const Component = Date.now() > startTime ? App : Countdown;
 
 // Stop peeking >:(
 ReactDOM.render(
-	<Countdown />,
+	<Component />,
 	document.getElementById('root')
 );
 
